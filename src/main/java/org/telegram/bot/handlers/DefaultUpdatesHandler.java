@@ -239,11 +239,6 @@ public class DefaultUpdatesHandler extends UpdatesHandlerBase {
     }
 
     @Override
-    protected void onTLAbsMessageCustom(TLAbsMessage message) {
-
-    }
-
-    @Override
     protected void onUsersCustom(List<TLAbsUser> users) {
 
     }
@@ -357,4 +352,9 @@ public class DefaultUpdatesHandler extends UpdatesHandlerBase {
     protected void onTLUpdateBotPrecheckoutQueryCustom(TLUpdateBotPrecheckoutQuery update) {
 
     }
+
+	@Override
+	protected void onTLUpdateChannelTooLongCustom(TLUpdateChannelTooLong update) {
+		
+	}
 }
